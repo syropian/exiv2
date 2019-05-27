@@ -1,5 +1,5 @@
 require 'mkmf'
-config = pkg_config('exiv2', 'cflags')
+config = pkg_config('exiv2', '')
 if config
   $CPPFLAGS = [$CPPFLAGS, config].join ' '
   create_makefile("exiv2/exiv2")
